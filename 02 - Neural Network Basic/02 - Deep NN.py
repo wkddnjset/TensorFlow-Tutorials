@@ -43,6 +43,7 @@ model = tf.add(tf.matmul(L1, W2), b2)
 
 # 텐서플로우에서 기본적으로 제공되는 크로스 엔트로피 함수를 이용해
 # 복잡한 수식을 사용하지 않고도 최적화를 위한 비용 함수를 다음처럼 간단하게 적용할 수 있습니다.
+# labels는 실제 결과값, logits은 예측 결과값
 cost = tf.reduce_mean(
     tf.nn.softmax_cross_entropy_with_logits(labels=Y, logits=model))
 
