@@ -4,6 +4,7 @@ import tensorflow as tf
 x_data = [1, 2, 3]
 y_data = [1, 2, 3]
 
+# -1.0 1.0 까지의 수 중에서 랜덤값 출력
 W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 b = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 
